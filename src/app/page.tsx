@@ -180,7 +180,7 @@ export default function Home() {
       <section className="pb-20 px-6">
         <div className="max-w-5xl mx-auto">
           <p className="text-text-muted text-center text-xs uppercase tracking-widest mb-8">What You&apos;ll Receive</p>
-          <div className="grid sm:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {/* Entry Signal */}
             <div className="bg-navy-card border border-navy-border rounded-2xl p-6 font-mono text-sm leading-relaxed">
               <div className="flex items-center gap-2 mb-3">
@@ -194,25 +194,6 @@ export default function Home() {
                 <p className="text-foreground">&#x1F7E2; Direction: <span className="text-green-400">LONG</span></p>
                 <p className="text-foreground">&#x1F4CD; Entry: <span className="text-cyan">$68,420.00</span></p>
                 <p className="text-foreground">&#x1F6D1; Stop: <span className="text-red-400">$66,950.00</span></p>
-                <div className="border-t border-navy-border mt-3 pt-3">
-                  <p className="text-text-muted text-xs">&#x1F5FA;&#xFE0F; Aroon Atlas</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Exit Signal */}
-            <div className="bg-navy-card border border-navy-border rounded-2xl p-6 font-mono text-sm leading-relaxed">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
-                <span className="text-text-muted font-sans text-xs uppercase tracking-widest">Exit Signal</span>
-              </div>
-              <div className="space-y-1">
-                <p className="text-foreground font-bold">&#x1F6AA; EXIT SIGNAL</p>
-                <p className="text-foreground">&#x1F4B0; Asset: <span className="text-cyan">ETHUSDT</span></p>
-                <p className="text-foreground">&#x23F0; Timeframe: <span className="text-cyan">1D</span></p>
-                <p className="text-foreground">&#x1F534; Direction: <span className="text-red-400">SHORT</span></p>
-                <p className="text-foreground">&#x1F4CD; Entry: <span className="text-cyan">$3,280.00</span></p>
-                <p className="text-foreground">&#x1F6D1; Stop: <span className="text-red-400">$3,410.00</span></p>
                 <div className="border-t border-navy-border mt-3 pt-3">
                   <p className="text-text-muted text-xs">&#x1F5FA;&#xFE0F; Aroon Atlas</p>
                 </div>
