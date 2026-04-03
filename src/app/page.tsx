@@ -176,55 +176,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Signal Previews */}
-      <section className="pb-20 px-6">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-text-muted text-center text-xs uppercase tracking-widest mb-8">What You&apos;ll Receive</p>
-          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            {/* Entry Signal */}
-            <div className="bg-navy-card border border-navy-border rounded-2xl p-6 font-mono text-sm leading-relaxed">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-                <span className="text-text-muted font-sans text-xs uppercase tracking-widest">Entry Signal</span>
-              </div>
-              <div className="space-y-1">
-                <p className="text-foreground font-bold">&#x1F3AF; LIVE SIGNAL</p>
-                <p className="text-foreground">&#x1F4B0; Asset: <span className="text-cyan">BTCUSDT</span></p>
-                <p className="text-foreground">&#x23F0; Timeframe: <span className="text-cyan">4h</span></p>
-                <p className="text-foreground">&#x1F7E2; Direction: <span className="text-green-400">LONG</span></p>
-                <p className="text-foreground">&#x1F4CD; Entry: <span className="text-cyan">$68,420.00</span></p>
-                <p className="text-foreground">&#x1F6D1; Stop: <span className="text-red-400">$66,950.00</span></p>
-                <div className="border-t border-navy-border mt-3 pt-3">
-                  <p className="text-text-muted text-xs">&#x1F5FA;&#xFE0F; Aroon Atlas</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Daily News Pulse */}
-            <div className="bg-navy-card border border-navy-border rounded-2xl p-6 font-mono text-sm leading-relaxed">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="w-2 h-2 rounded-full bg-cyan animate-pulse" />
-                <span className="text-text-muted font-sans text-xs uppercase tracking-widest">Daily Pulse</span>
-              </div>
-              <div className="space-y-1">
-                <p className="text-foreground font-bold">&#x1F5FA;&#xFE0F; Aroon Atlas — &#x1F4B0; Crypto</p>
-                <p className="text-foreground">&#x1F4C5; April 2, 2026</p>
-                <p className="text-foreground mt-2">&#x1F525; Trending</p>
-                <p className="text-text-muted text-xs">1. BTC <span className="text-green-400">+3.2%</span></p>
-                <p className="text-text-muted text-xs">2. SUI <span className="text-green-400">+12.7%</span></p>
-                <p className="text-text-muted text-xs">3. DOGE <span className="text-red-400">-1.4%</span></p>
-                <p className="text-foreground mt-2">&#x1F4F0; Headlines</p>
-                <p className="text-text-muted text-xs">1. Fed holds rates steady</p>
-                <p className="text-text-muted text-xs">2. ETH ETF inflows surge</p>
-                <div className="border-t border-navy-border mt-3 pt-3">
-                  <p className="text-text-muted text-xs">&#x1F5FA;&#xFE0F; Aroon Atlas</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Customization Visual */}
       <section className="py-20 px-6 border-y border-navy-border">
         <div className="max-w-5xl mx-auto">
