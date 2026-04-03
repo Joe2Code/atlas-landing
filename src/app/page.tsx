@@ -176,19 +176,184 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Signal Preview */}
+      {/* Signal Previews */}
       <section className="pb-20 px-6">
-        <div className="max-w-md mx-auto bg-navy-card border border-navy-border rounded-2xl p-6 font-mono text-sm leading-relaxed">
-          <p className="text-text-muted mb-3 font-sans text-xs uppercase tracking-widest">Live Signal Preview</p>
-          <div className="space-y-1">
-            <p className="text-foreground font-bold">&#x1F3AF; LIVE SIGNAL</p>
-            <p className="text-foreground">&#x1F4B0; Asset: <span className="text-cyan">BTCUSDT</span></p>
-            <p className="text-foreground">&#x23F0; Timeframe: <span className="text-cyan">4h</span></p>
-            <p className="text-foreground">&#x1F7E2; Direction: <span className="text-green-400">LONG</span></p>
-            <p className="text-foreground">&#x1F4CD; Entry: <span className="text-cyan">$68,420.00</span></p>
-            <p className="text-foreground">&#x1F6D1; Stop: <span className="text-red-400">$66,950.00</span></p>
-            <div className="border-t border-navy-border mt-3 pt-3">
-              <p className="text-text-muted text-xs">&#x1F5FA;&#xFE0F; Aroon Atlas</p>
+        <div className="max-w-5xl mx-auto">
+          <p className="text-text-muted text-center text-xs uppercase tracking-widest mb-8">What You&apos;ll Receive</p>
+          <div className="grid sm:grid-cols-3 gap-6">
+            {/* Entry Signal */}
+            <div className="bg-navy-card border border-navy-border rounded-2xl p-6 font-mono text-sm leading-relaxed">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+                <span className="text-text-muted font-sans text-xs uppercase tracking-widest">Entry Signal</span>
+              </div>
+              <div className="space-y-1">
+                <p className="text-foreground font-bold">&#x1F3AF; LIVE SIGNAL</p>
+                <p className="text-foreground">&#x1F4B0; Asset: <span className="text-cyan">BTCUSDT</span></p>
+                <p className="text-foreground">&#x23F0; Timeframe: <span className="text-cyan">4h</span></p>
+                <p className="text-foreground">&#x1F7E2; Direction: <span className="text-green-400">LONG</span></p>
+                <p className="text-foreground">&#x1F4CD; Entry: <span className="text-cyan">$68,420.00</span></p>
+                <p className="text-foreground">&#x1F6D1; Stop: <span className="text-red-400">$66,950.00</span></p>
+                <div className="border-t border-navy-border mt-3 pt-3">
+                  <p className="text-text-muted text-xs">&#x1F5FA;&#xFE0F; Aroon Atlas</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Exit Signal */}
+            <div className="bg-navy-card border border-navy-border rounded-2xl p-6 font-mono text-sm leading-relaxed">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+                <span className="text-text-muted font-sans text-xs uppercase tracking-widest">Exit Signal</span>
+              </div>
+              <div className="space-y-1">
+                <p className="text-foreground font-bold">&#x1F6AA; EXIT SIGNAL</p>
+                <p className="text-foreground">&#x1F4B0; Asset: <span className="text-cyan">ETHUSDT</span></p>
+                <p className="text-foreground">&#x23F0; Timeframe: <span className="text-cyan">1D</span></p>
+                <p className="text-foreground">&#x1F534; Direction: <span className="text-red-400">SHORT</span></p>
+                <p className="text-foreground">&#x1F4CD; Entry: <span className="text-cyan">$3,280.00</span></p>
+                <p className="text-foreground">&#x1F6D1; Stop: <span className="text-red-400">$3,410.00</span></p>
+                <div className="border-t border-navy-border mt-3 pt-3">
+                  <p className="text-text-muted text-xs">&#x1F5FA;&#xFE0F; Aroon Atlas</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Daily News Pulse */}
+            <div className="bg-navy-card border border-navy-border rounded-2xl p-6 font-mono text-sm leading-relaxed">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-2 h-2 rounded-full bg-cyan animate-pulse" />
+                <span className="text-text-muted font-sans text-xs uppercase tracking-widest">Daily Pulse</span>
+              </div>
+              <div className="space-y-1">
+                <p className="text-foreground font-bold">&#x1F5FA;&#xFE0F; Aroon Atlas — &#x1F4B0; Crypto</p>
+                <p className="text-foreground">&#x1F4C5; April 2, 2026</p>
+                <p className="text-foreground mt-2">&#x1F525; Trending</p>
+                <p className="text-text-muted text-xs">1. BTC <span className="text-green-400">+3.2%</span></p>
+                <p className="text-text-muted text-xs">2. SUI <span className="text-green-400">+12.7%</span></p>
+                <p className="text-text-muted text-xs">3. DOGE <span className="text-red-400">-1.4%</span></p>
+                <p className="text-foreground mt-2">&#x1F4F0; Headlines</p>
+                <p className="text-text-muted text-xs">1. Fed holds rates steady</p>
+                <p className="text-text-muted text-xs">2. ETH ETF inflows surge</p>
+                <div className="border-t border-navy-border mt-3 pt-3">
+                  <p className="text-text-muted text-xs">&#x1F5FA;&#xFE0F; Aroon Atlas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Customization Visual */}
+      <section className="py-20 px-6 border-y border-navy-border">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+            Your Setup, <span className="text-cyan">Your Rules</span>
+          </h2>
+          <p className="text-text-muted text-center mb-16 max-w-2xl mx-auto">
+            Pick exactly what you want to follow. Change it anytime — no lock-in, no clutter.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-8">
+            {/* Coin Selector Mockup */}
+            <div className="bg-navy-card border border-navy-border rounded-2xl p-6">
+              <div className="flex items-center gap-2 mb-5">
+                <svg className="w-5 h-5 text-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <p className="text-foreground font-semibold">Select Your Coins</p>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  { coin: "BTC", active: true },
+                  { coin: "ETH", active: true },
+                  { coin: "SOL", active: true },
+                  { coin: "XRP", active: false },
+                  { coin: "DOGE", active: true },
+                  { coin: "LINK", active: false },
+                  { coin: "SUI", active: true },
+                  { coin: "AAVE", active: false },
+                  { coin: "BNB", active: false },
+                  { coin: "UNI", active: false },
+                  { coin: "HBAR", active: true },
+                  { coin: "ONDO", active: false },
+                  { coin: "INJ", active: false },
+                  { coin: "FLOKI", active: false },
+                  { coin: "TAO", active: true },
+                  { coin: "PENGU", active: false },
+                ].map((c) => (
+                  <span
+                    key={c.coin}
+                    className={`text-xs font-mono px-3 py-1.5 rounded-full border transition-colors ${
+                      c.active
+                        ? "bg-cyan/15 border-cyan text-cyan"
+                        : "bg-transparent border-navy-border text-text-muted"
+                    }`}
+                  >
+                    {c.active ? "\u2713 " : ""}{c.coin}
+                  </span>
+                ))}
+              </div>
+              <div className="flex gap-2 mt-5">
+                <span className="text-xs bg-cyan/10 text-cyan px-3 py-1.5 rounded-lg border border-cyan/30">Select All</span>
+                <span className="text-xs bg-navy-light text-text-muted px-3 py-1.5 rounded-lg border border-navy-border">Clear</span>
+                <span className="text-xs bg-cyan text-background font-semibold px-4 py-1.5 rounded-lg">Done &#x2713;</span>
+              </div>
+            </div>
+
+            {/* News Feed Mockup */}
+            <div className="bg-navy-card border border-navy-border rounded-2xl p-6">
+              <div className="flex items-center gap-2 mb-5">
+                <svg className="w-5 h-5 text-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+                </svg>
+                <p className="text-foreground font-semibold">Curate Your News Feed</p>
+              </div>
+              <div className="space-y-3">
+                {[
+                  { cat: "\u{1F4B0} Crypto News", freq: "Daily", active: true },
+                  { cat: "\u{1F4CA} Economy & Markets", freq: "Daily", active: true },
+                  { cat: "\u{1F30D} World & Geopolitics", freq: "Weekly", active: true },
+                ].map((n) => (
+                  <div key={n.cat} className="flex items-center justify-between bg-navy-light rounded-xl px-4 py-3 border border-navy-border">
+                    <span className="text-foreground text-sm">{n.cat}</span>
+                    <div className="flex gap-1.5">
+                      {["Daily", "Weekly", "Bi-Wk", "Off"].map((f) => (
+                        <span
+                          key={f}
+                          className={`text-xs px-2.5 py-1 rounded-md transition-colors ${
+                            f === n.freq
+                              ? "bg-cyan text-background font-semibold"
+                              : "text-text-muted hover:text-foreground"
+                          }`}
+                        >
+                          {f}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-5 space-y-2">
+                <p className="text-foreground text-sm font-medium">&#x23F0; Timeframes</p>
+                <div className="flex gap-2">
+                  {[
+                    { tf: "1h", active: false },
+                    { tf: "4h", active: true },
+                    { tf: "1D", active: true },
+                  ].map((t) => (
+                    <span
+                      key={t.tf}
+                      className={`text-sm font-mono px-4 py-2 rounded-xl border transition-colors ${
+                        t.active
+                          ? "bg-cyan/15 border-cyan text-cyan"
+                          : "bg-transparent border-navy-border text-text-muted"
+                      }`}
+                    >
+                      {t.active ? "\u2713 " : ""}{t.tf}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
