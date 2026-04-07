@@ -12,16 +12,26 @@ export const metadata: Metadata = {
   description:
     "Real-time crypto trading signals, curated market news, and AI-powered analysis — delivered straight to Telegram.",
   openGraph: {
+    siteName: "Aroon Atlas",
     title: "Aroon Atlas — Your Crypto Trading Companion",
     description:
       "Real-time crypto trading signals, curated market news, and AI-powered analysis — delivered straight to Telegram.",
     type: "website",
+    images: [
+      {
+        url: "/logo.jpeg",
+        width: 512,
+        height: 512,
+        alt: "Aroon Atlas Logo",
+      },
+    ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Aroon Atlas — Your Crypto Trading Companion",
     description:
       "Real-time crypto trading signals, curated market news, and AI-powered analysis — delivered straight to Telegram.",
+    images: ["/logo.jpeg"],
   },
 };
 
